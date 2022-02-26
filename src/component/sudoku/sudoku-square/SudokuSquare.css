@@ -1,0 +1,8 @@
+.sudoku-square {
+    border: 1px solid #999;
+    padding: 0;
+}
+
+.sudoku-square > table {
+    border-spacing: 0;
+}

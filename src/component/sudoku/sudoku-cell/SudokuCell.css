@@ -1,0 +1,41 @@
+@media screen and (min-height: 500px) {
+    .sudoku-cell {
+        font-size: 24px;
+        height: 40px;
+        line-height: 40px;
+        min-height: 40px;
+        min-width: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    .sudoku-cell {
+        font-size: 30px;
+        height: 50px;
+        line-height: 50px;
+        min-height: 50px;
+        min-width: 50px;
+        width: 50px;
+    }
+}
+
+.sudoku-cell {
+    background: #fff;
+    border: 1px solid #999;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+}
+
+.sudoku-cell-fixed {
+    color: black;
+}
+
+.sudoku-cell-not-fixed {
+    color: blue;
+}
+
+.sudoku-cell-selected {
+    background: #ddd;
+}
