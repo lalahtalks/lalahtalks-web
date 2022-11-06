@@ -1,20 +1,10 @@
-import { v4 as uuid } from "uuid";
+import useRequestAuthentication from '../../hook/useRequestAuthentication';
 
-function RequestAuthentication() {
-    const generateNonce = () => {
-        return uuid().slice(0, 8);
-    };
+function RequestAuthentication(props) {
 
-    const nonce = generateNonce();
-    window.location = 'http://localhost:80/auth'
-        + '/realms/lalahtalks/protocol/openid-connect/auth'
-        + '?response_type=id_token%20token'
-        + '&scope=openid%20profile%20email'
-        + '&client_id=lalahtalks-web'
-        + '&nonce=' + nonce
-        + '&redirect_uri=' + window.location.href;
+    useRequestAuthentication(props.redirectUri);
+    return <></>;
 
-    return null;
 }
 
 export default RequestAuthentication;

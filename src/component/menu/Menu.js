@@ -1,21 +1,18 @@
-import "./Menu.css";
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import MenuBrand from './MenuBrand';
+import Navbar from './navbar/Navbar';
+import NavbarToggler from './NavbarToggler';
 
 function Menu() {
 
     return (
-        <ul className="menu">
-            <li>
-                <Link to="/home">Home</Link>
-            </li>
-            <li>
-                <Link to="/code">Code</Link>
-            </li>
-            <li>
-                <Link to="/sudoku">Sudoku</Link>
-            </li>
-        </ul>
+        <nav className="navbar navbar-expand-lg bg-light">
+            <div className="container-fluid">
+                <MenuBrand/>
+                <NavbarToggler/>
+                <Navbar/>
+            </div>
+        </nav>
     );
 
 }
